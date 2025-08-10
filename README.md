@@ -36,13 +36,19 @@ python summarization_project_xsum.py
 TRAIN_SAMPLE_SIZE = 20000
 
 ### Параметры модели
+
 max_input_length = 1024
+
 max_target_length = 128
+
 prefix = "summarize: "
 
 ### Параметры обучения
+
 learning_rate = 2e-5
+
 batch_size = 16
+
 num_epochs = 1
 
 ## Результаты работы
