@@ -23,6 +23,53 @@
 
 ## Установка и запуск
 
+pip install -r requirements.txt
+2. Создайте файл .env с вашим токеном Hugging Face:
+HF_TOKEN=ваш_токен_здесь
+3. Запустите основной скрипт:
+python summarization_project_xsum.py
+
+## Конфигурация
+
+pip install -r requirements.txt
+2. Создайте файл .env с вашим токеном Hugging Face:
+HF_TOKEN=ваш_токен_здесь
+3. Запустите основной скрипт:
+python summarization_project_xsum.py
+
+## Конфигурация
+
+Основные параметры в коде:
+# Размеры выборок
+TRAIN_SAMPLE_SIZE = 20000
+
+# Параметры модели
+max_input_length = 1024
+max_target_length = 128
+prefix = "summarize: "
+
+# Параметры обучения
+learning_rate = 2e-5
+batch_size = 16
+num_epochs = 1
+
+## Результаты работы
+
+# Проект предоставляет:
+
+Обученную модель для генерации саммари
+
+Сравнение оригинальных и сгенерированных текстов
+
+Визуализацию результатов в HTML-формате
+
+Ключевые факты, категории и теги для текстов
+
+Основные параметры в коде:
+# Размеры выборок
+TRAIN_SAMPLE_SIZE = 20000
+
+
 1. Установите зависимости:
 ```bash
 pip install -r requirements.txt
